@@ -416,7 +416,7 @@ extern "C" commandResult_t IR_Send_Cmd(const void *context, const char *cmd, con
 		}
 
 		if((totalWords>4)||(wordIndex>20)||(qtde>2)){
-		    ADDLOG_ERROR(LOG_FEATURE_IR, (char *)"Comando inválido. Formato esperado [NEC-0x821A34D7].");
+		    ADDLOG_ERROR(LOG_FEATURE_IR, (char *)"Command not valid not like [KELON-0x42030683]");
 		    return CMD_RES_BAD_ARGUMENT;
 		}
 	}
